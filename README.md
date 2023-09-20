@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Tata Cara run project Online Book Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.Masuk ke dalam folder backend dan frontend dengan perintah cd backend
+2.Ketik npm install pada backend dan npm install . pada frontend
+3.setelah NPM terinstall, ketik npx sequelize-cli db:create pada terminal backend untuk create database di postgreSQL dan ketik npx sequelize-cli db:migrate untuk migration database ke dbeaver
 
-## Available Scripts
+3.Setelah itu, jalankan NPM start pada backend dan frontend
 
-In the project directory, you can run:
+4.Masuk ke halaman login, jika belum mempunyai akun, silahkan register.
 
-### `npm start`
+5.Masuk ke localhost:3005/registerCMS , jika ingin registrasi sebagai admin.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+URL for Routing User
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.localhost:3005/login ==> Display Login Page
+2.localhost:3005/registerUser ==> Display Register User Page
+4.localhost:3005/user/home ==> Display User Home Page
+5.localhost:3005/user/cart ==> Display Cart Page
+6.localhost:3005/user/orders ==> Display Order Page
+7.localhost:3005/user/profile ==> Display Profile Page
 
-### `npm test`
+URL for Routing Admin
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.localhost:3005/login ==> Display Login Page
+2.localhost:3005/registerCMS ==> Display Register Admin Page
+4.localhost:3005/cms/dashboard/ ==> Display Admin Dashboard Page
+5.localhost:3005/cms/profile ==> Display Profile Admin Page
+6.localhost:3005/cms/editProfile ==> Display Edit Profile Admin Page
+7.localhost:3005/cms/details/:id ==> Display Detail Product Page
+8.localhost:3005/cms/edit/:id ==> Display Edit Product Page
 
-### `npm run build`
+API Documentation User
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.HTTP Method POST ==> localhost:3005/login ==> Login
+2.HTTP Method POST ==> localhost:3005/registerUser ==>Register User
+4.HTTP Method GET ==> localhost:3005/user/home ==> Display User Home Page
+5.HTTP Method POST ==> localhost:3005/user/cart/detail/:id ==> Add To Cart
+6.HTTP Method POST ==> localhost:3005/user/orders ==> Display Order Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+API Documentation User
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.HTTP Method POST ==> localhost:3005/login ==> Login Admin
+2.HTTP Method POST ==> localhost:3005/registerCMS ==> Register Admin
+4.HTTP Method GET ==> localhost:3005/cms/dashboard/ ==> Get Book
+5.HTTP Method GET ==> localhost:3005/cms/profile ==> GET Profile
+6.HTTP Method POST ==> localhost:3005/cms/editProfile ==> Edit Profile Admin
+7.HTTP Method GET ==> localhost:3005/cms/details/:id ==> GET Product Page
+8.HTTP Method POST ==> localhost:3005/cms/edit/:id ==> Edit Product

@@ -6,21 +6,21 @@ import { MdLogout } from "react-icons/md";
 import Swal from "sweetalert2";
 
 const Header = () => {
-
   const navigate = useNavigate();
   return (
     <div className="bg-darkColor h-auto">
       <div className="container flex py-1 mx-auto border-0">
         <div className="w-2/12 lg:h-20 flex justify-center items-center flex-1">
           <Link
-            to="/user/home"npm start
+            to="/user/home"
+            npm
+            start
             className="text-2xl text-white font-semibold"
           ></Link>
           <h1 className="text-lightColor font-semibold ml-3 text-lg">
-            Online-Bookstore
+            <Link to="/user/home">Online-Bookstore</Link>
           </h1>
         </div>
-       
 
         <div className="w-4/12 flex justify-center items-center">
           <div className="flex flex-col lg:flex-row lg:space-x-8 lg:text-sm lg:font-medium text-lightColor">
