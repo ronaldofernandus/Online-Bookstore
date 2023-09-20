@@ -1,22 +1,21 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-
+import buku1 from "../assets/images/buku1.jpeg";
+import buku2 from "../assets/images/buku1.jpeg";
+import buku3 from "../assets/images/buku3.jpeg";
 const dummyImg = [
   {
-    image:
-      "https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg",
+    image: buku1,
     label: "Everything for your biking needs, all in one place!",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: buku2,
     label:
       "Find your desired bike parts here, whether it's new or used but still durable",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1602148740250-0a4750e232e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: buku3,
     label: "Your used bike parts might be useful for anyone else!",
   },
 ];

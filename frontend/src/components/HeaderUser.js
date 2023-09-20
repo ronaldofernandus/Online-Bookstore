@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaSearch, FaTimes } from "react-icons/fa";
-import { MdLogout, MdOutlineDirectionsBike } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
 import Swal from "sweetalert2";
 
 const Header = () => {
@@ -13,11 +13,12 @@ const Header = () => {
     <div className="bg-darkColor h-auto">
       <div className="container flex py-1 mx-auto border-0">
         <div className="w-2/12 lg:h-20 flex justify-center items-center flex-1">
-          <Link to="/user/home" className="text-2xl text-white font-semibold">
-            <MdOutlineDirectionsBike color="white" />
-          </Link>
+          <Link
+            to="/user/home"
+            className="text-2xl text-white font-semibold"
+          ></Link>
           <h1 className="text-lightColor font-semibold ml-3 text-lg">
-            BikeHaven
+            Online-Bookstore
           </h1>
         </div>
         <div className="w-4/12 flex justify-center items-center">
