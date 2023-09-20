@@ -7,16 +7,15 @@ import buku3 from "../assets/images/buku3.jpeg";
 const dummyImg = [
   {
     image: buku1,
-    label: "Everything for your biking needs, all in one place!",
+    label: "Buku Anak Terbaru",
   },
   {
     image: buku2,
-    label:
-      "Find your desired bike parts here, whether it's new or used but still durable",
+    label: "Buku Terlaris",
   },
   {
     image: buku3,
-    label: "Your used bike parts might be useful for anyone else!",
+    label: "Buku Tervaforit",
   },
 ];
 

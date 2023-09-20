@@ -17,25 +17,13 @@ function Card(props) {
           alt=""
           src={`${url}/images/${data.ProductImages[0].filename}`}
         />
-        <div className="bg-accentColor font-semibold">{data.condition}</div>
-        <div className="p-2 ">
-          <p className="truncate">{data.name}</p>
-          <div>
-            <p className="font-bold inline">Rp{intToRupiah(data.price)} </p>
-          </div>
-          <div className="flex grid-cols-5">
-            <div className="flex col-span-2 w-12">
-              <p className="text-midColor inline text-2xl">
-                <AiFillStar />
-              </p>
-              <p className="inline">{data.rating}</p>
-            </div>
-            <div className="w-5 text-center">|</div>
-            <div className="w-full">
-              <p className="inline">Terjual {data.totalSold}</p>
-            </div>
-          </div>
-        </div>
+        <ul>
+          <li>Judul Buku : {data.titleBook}</li>
+          <li>Author :{data.author} </li>
+          <li>Publisher :{data.publisher} </li>
+          <li>Stock : {data.stock}</li>
+          <li>Price :{data.price}</li>
+        </ul>
       </div>
     </div>
   );
